@@ -24,26 +24,26 @@ if (ejercicio == 0) {
 // Ejercicios de sintaxis de "for"
 if (ejercicio == 1) {
     // Descomentar cada bloque y encontrar el error de sintaxis :D
-    /*for(i=0;<10i++){
+    for(i=0; i<10; i++){
         console.log(`el valor de "i" es: ${i}`);
     }
-    */
-       /*forar i=0;<10;i++){
+    
+    for (var i=0;i<10;i++){
         console.log(`el valor de "i" es: ${i}`);
     }
-    */
-       /*for(var i=0;0<10;i++){
+    
+    for(var i=0; 0<10; i++){
         console.log(`el valor de "i" es: ${i}`);
     }
-    */
-       /*for(var i=0;i>10;i++){
+    
+    for(var i=0; i>10; i++){
         console.log(`el valor de "i" es: ${i}`);
     }
-    */
-       /*for(var i=o;i<1o;i++){
-        consolelog(`el valor de "i" es: ${i}`);
+    
+    for(var i=0; i<10; i++){
+        console.log(`el valor de "i" es: ${i}`);
     }
-    */
+    
 
 }
 
@@ -53,7 +53,12 @@ if (ejercicio == 2) {
     // En cada iteración del bucle imprimir en consola el número
     // o índice que irá incrementando
     // Utilice bucle "for"
+
+    for(i=0; i<10; i++){
+        console.log(`el valor de "i" es: ${i}`);
+    }
 }
+
 
 // Ejercicios de práctica numérica con bucle for of
 if (ejercicio == 3) {
@@ -62,6 +67,10 @@ if (ejercicio == 3) {
     // y en cada iteración imprira en la consola el valor
     // del número recorrido
     // Utilice bucle "for of"
+
+    for(const numero of numeros){
+        console.log(`El número actual del array es: ${numero}`)
+    }
 }
 
 // Ejercicios de práctica de objetos con bucle for of
@@ -85,6 +94,10 @@ if (ejercicio == 4) {
     // En cada iteración imprimir el nombre de la persona.
     // Utilice bucle "for of"
 
+    for(const persona of personas){
+        console.log(`La persona actual de la lista es de nombre ${persona.nombre}`)
+    }
+
 }
 
 // Ejercicios de práctica de objetos con bucle for of
@@ -98,4 +111,16 @@ if (ejercicio == 5) {
     // El bucle deberá ejecutarse por 2 iteraciones.
     // Al terminarse el bucle (luego de ejecutarse todas las iteraciones)
     // deberá imprimir en consola el contenido del array "personas"
+    const listado = [1,2];
+
+    for(i of listado){
+        personas.push(
+            {
+                "nombre": prompt("Ingrese un nombre"),
+                "apellido": prompt("Ingrese un apellido")
+            }
+        )
+    }
+    console.log(personas)
+
 }
